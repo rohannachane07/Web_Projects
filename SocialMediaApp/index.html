@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialPulse</title>
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+
+     <!--FONT-AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+             SocialPulse
+            </h2>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for creators,inspirations,and projects">   
+            </div>
+
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Total 3 Sections:Left,Middle,Right(Using CSS Grid,we will achieve that)-->
+    <!-- __________________________________MAIN______________________________________-->
+   <main>
+    <div class="container">
+        <!--************************LEFT***********************************-->
+        <div class="left">
+            <a class="profile">
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg">
+                </div>
+                <div class="handle">
+                    <h4>rohan</h4>
+                    <p class="text-muted">
+                        @rn
+                    </p>
+                </div>
+            </a>
+
+            <!--=======================SIDEBAR==========================-->
+            <div class="sidebar">
+                <a class="menu-item active">
+                    <span><i class="fa-solid fa-house"></i></span><h3>Home</h3>
+                </a>
+                
+                <a class="menu-item">
+                    <span><i class="fa-solid fa-compass"></i></span><h3>Explore</h3>
+                </a>
+
+                <a class="menu-item" id="notifications">
+                    <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+                    <!--++++++++++++++++++Notification Popup++++++++++++++++++++++-->
+                    <div class="notification-popup">
+                        <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Virat Kohli</b> accepted your friend request.
+                            <small class="text-muted">7 DAYS AGO</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Saurav Ganguli</b> mentioned you in a comment.
+                            <small class="text-muted">7 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>MS DHONI</b> accepted your friend request.
+                            <small class="text-muted">1 HOUR AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-5.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Rohit Sharma</b> commented on your post.
+                            <small class="text-muted">7 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-6.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>AB DeVilliars</b> commented on a post you're tagged in.
+                            <small class="text-muted">3 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-7.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Rishab Pant</b> accepted your friend request.
+                            <small class="text-muted">7 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-8.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Suresh Raina</b> and <b>277 others</b> liked your post.
+                            <small class="text-muted">4 MINUTES AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-9.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Stive Smith</b> commented on your post.
+                            <small class="text-muted">1 HOUR AGO</small>
+                        </div>
+                    </div>
+                </div>
+                </a>
+<!--+++++++++++++++++++++END NOTIFICATION POPUP-->
+
+                <a class="menu-item" id="messages-notifications">
+                    <span><i class="fa-solid fa-message" ><small class="notification-count">6</small></i></span><h3>Messages</h3>
+                </a>
+
+                <a class="menu-item">
+                    <span><i class="fa-solid fa-bookmark"></i></span><h3>Bookmarks</h3>
+                </a>
+
+                <a class="menu-item">
+                    <span><i class="fa-solid fa-chart-line"></i></span><h3>Analytics</h3>
+                </a>
+
+                <a class="menu-item" id="theme">
+                    <span><i class="fa-solid fa-palette"></i></span><h3>Theme</h3>
+                </a>
+
+                <a class="menu-item active">
+                    <span><i class="fa-solid fa-gear"></i></span><h3>Settings</h3>
+                </a>  
+            </div>
+
+            <!--++++++++++++++++++++++++++++End of SIDEBAR+++++++++++++++++++++++++++++-->
+            <label for="create-post" class="btn btn-primary">Create Post</label>
+        </div>
+
+         <!--************************MIDDLE***********************************-->
+        <div class="middle">
+           <!--+++++++++++++++++++++++STORIES++++++++++++++++++++-->
+           <div class="stories">
+            <div class="story">
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg">
+                </div>
+                <p class="name">Your Story</p>
+            </div>
+
+            <div class="story">
+                <div class="profile-photo">
+                    <img src="./images/profile-10.jpg">
+                </div>
+                <p class="name">Hardik Pandya</p>
+            </div>
+
+            <div class="story">
+                <div class="profile-photo">
+                    <img src="./images/profile-11.jpg">
+                </div>
+                <p class="name">Glen Maxwell</p>
+            </div>
+
+            <div class="story">
+                <div class="profile-photo">
+                    <img src="./images/profile-12.jpg">
+                </div>
+                <p class="name">Pat Cummins</p>
+            </div>
+
+            <div class="story">
+                <div class="profile-photo">
+                    <img src="./images/profile-13.jpg">
+                </div>
+                <p class="name">Mohammad Siraj</p>
+            </div>
+
+            <div class="story">
+                <div class="profile-photo">
+                    <img src="./images/profile-14.jpg">
+                </div>
+                <p class="name">Gautam Gambhir</p>
+            </div>
+           </div>
+    <!--+++++++++++++++++++++++++++END OF STORIES++++++++++++++++++++++-->
+
+    <form class="create-post">
+        <div class="profile-photo">
+            <img src="./images/profile-1.jpg">
+        </div>
+        <input type="text" placeholder="What's on your mind,Rohan?" id="create-post">
+        <input type="submit" value="Post" class="btn btn-primary">
+    </form>
+
+    <!--+++++++++++++++++++++FEEDS++++++++++++++++++++-->
+    <div class="feeds">
+        <!--++++++++++++++++FEED 1++++++++++++++++++++++++-->
+        <div class="feed">
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./images/profile-2.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Virat Kohli</h3>
+                        <small>Bridgetown, Barbados</small>
+                    </div>
+                </div>
+                    <span class="edit">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="./images/feed-1.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                      <span><i class="fa-regular fa-comment"></i></span>
+                      <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <div class="bookmarks">
+                       <span><i class="fa-regular fa-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="./images/profile-10.jpg"></span>
+                    <span><img src="./images/profile-11.jpg"></span>
+                    <span><img src="./images/profile-12.jpg"></span>
+                    <p>Liked by <b>Sakshi Kalyankar</b> and <b>2,323 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>Virat Kohli</b> We finally did it.<span class="hash-tag">#wc2024</span></p>
+                </div>
+
+                <div class="comments text-muted">View all 177 comments</div>
+            </div>
+        
+        <!--++++++++++++++++FEED 2++++++++++++++++++++++++-->
+        <div class="feed">
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./images/profile-15.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Ravindra Jadeja</h3>
+                        <small></small>
+                    </div>
+                </div>
+                    <span class="edit">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="./images/feed-2.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                      <span><i class="fa-regular fa-comment"></i></span>
+                      <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <div class="bookmarks">
+                       <span><i class="fa-regular fa-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="./images/profile-10.jpg"></span>
+                    <span><img src="./images/profile-11.jpg"></span>
+                    <span><img src="./images/profile-12.jpg"></span>
+                    <p>Liked by <b>Sakshi Kalyankar</b> and <b>2,323 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>Ravindra Jadeja</b> Happy Birthday to my only favourite person in cricket. <span class="hash-tag">#bigbrother</span></p>
+                </div>
+
+                <div class="comments text-muted">View all 177 comments</div>
+            </div>
+        
+        <!--++++++++++++++++FEED 3++++++++++++++++++++++++-->
+        <div class="feed">
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./images/profile-16.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Suresh Raina</h3>
+                        <small></small>
+                    </div>
+                </div>
+                    <span class="edit">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="./images/feed-3.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                      <span><i class="fa-regular fa-comment"></i></span>
+                      <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <div class="bookmarks">
+                       <span><i class="fa-regular fa-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="./images/profile-10.jpg"></span>
+                    <span><img src="./images/profile-11.jpg"></span>
+                    <span><img src="./images/profile-12.jpg"></span>
+                    <p>Liked by <b>Sakshi Kalyankar</b> and <b>2,323 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>Suresh Raina</b> Finally  It comes home.Congrats to Entire Nation. <span class="hash-tag">#wc24</span></p>
+                </div>
+
+                <div class="comments text-muted">View all 177 comments</div>
+            </div>
+       
+        <!--++++++++++++++++FEED 4++++++++++++++++++++++++-->
+        <div class="feed">
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./images/profile-13.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Md.Siraj</h3>
+                        <small>Wankhede Stadium,Mumbai</small>
+                    </div>
+                </div>
+                    <span class="edit">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="./images/feed-4.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                      <span><i class="fa-regular fa-comment"></i></span>
+                      <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <div class="bookmarks">
+                       <span><i class="fa-regular fa-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="./images/profile-10.jpg"></span>
+                    <span><img src="./images/profile-11.jpg"></span>
+                    <span><img src="./images/profile-12.jpg"></span>
+                    <p>Liked by <b>Sakshi Kalyankar</b> and <b>2,323 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>Md.Siraj</b> Happy T20 retirement rohit bhai...Thanks for everything. <span class="hash-tag">#inspiration</span></p>
+                </div>
+
+                <div class="comments text-muted">View all 177 comments</div>
+            </div>
+        
+        <!--++++++++++++++++FEED 5++++++++++++++++++++++++-->
+        <div class="feed">
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./images/profile-10.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Hardik Pandya</h3>
+                        <small>Blue Sky Hotel</small>
+                    </div>
+                </div>
+                    <span class="edit">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="./images/feed-5.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                      <span><i class="fa-regular fa-comment"></i></span>
+                      <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <div class="bookmarks">
+                       <span><i class="fa-regular fa-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="./images/profile-10.jpg"></span>
+                    <span><img src="./images/profile-11.jpg"></span>
+                    <span><img src="./images/profile-12.jpg"></span>
+                    <p>Liked by <b>Sakshi Kalyankar</b> and <b>2,323 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>Hardik Pandya</b> Dating Out with my sweet wifey... <span class="hash-tag">#lifestyle</span></p>
+                </div>
+
+                <div class="comments text-muted">View all 177 comments</div>
+            </div>
+       
+        <!--++++++++++++++++FEED 6++++++++++++++++++++++++-->
+        <div class="feed">
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./images/profile-7.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Rishabh Pant</h3>
+                        <small>Barbados,Africa</small>
+                    </div>
+                </div>
+                    <span class="edit">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="./images/feed-6.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                      <span><i class="fa-regular fa-comment"></i></span>
+                      <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <div class="bookmarks">
+                       <span><i class="fa-regular fa-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="./images/profile-10.jpg"></span>
+                    <span><img src="./images/profile-11.jpg"></span>
+                    <span><img src="./images/profile-12.jpg"></span>
+                    <p>Liked by <b>Sakshi Kalyankar</b> and <b>2,323 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>Rishabh Pant</b> Your comeback should be stronger than your setback.<span class="hash-tag">#t20wc24</span></p>
+                </div>
+
+                <div class="comments text-muted">View all 177 comments</div>
+            </div>
+        
+        <!--++++++++++++++++FEED 7++++++++++++++++++++++++-->
+        <div class="feed">
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./images/profile-4.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>MS DHONI</h3>
+                        <small>Ranchi</small>
+                    </div>
+                </div>
+                    <span class="edit">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="./images/feed-7.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                      <span><i class="fa-regular fa-heart"></i></span>
+                      <span><i class="fa-regular fa-comment"></i></span>
+                      <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <div class="bookmarks">
+                       <span><i class="fa-regular fa-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="./images/profile-10.jpg"></span>
+                    <span><img src="./images/profile-11.jpg"></span>
+                    <span><img src="./images/profile-12.jpg"></span>
+                    <p>Liked by <b>Sakshi Kalyankar</b> and <b>2,323 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>MS DHONI</b> 14 Years of togetherness. <span class="hash-tag">#weddinganniversary</span></p>
+                </div>
+
+                <div class="comments text-muted">View all 177 comments</div>
+            </div>
+            <!--_______________________END OF FEED___________________-->
+        
+    </div>
+    <!--______________________________END OF FEEDS_________________________-->
+
+           
+ </div>
+ <!--______________________________END OF MIDDLE_________________________-->
+
+        
+ 
+           <!--************************RIGHT***********************************-->
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+                <h4>Messages</h4><i class="fa-regular fa-pen-to-square"></i>
+            </div>
+            <!--________Search Bar__________-->
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search message" id="message-search">
+            </div>
+            <!--________Messages Category__________-->
+            <div class="category">
+                <h6 class="active">Primary</h6>
+                <h6>General</h6>
+                <h6 class="message-requests">Requests(7)</h6>
+            </div>
+             <!--________Messages__________-->
+             <div class="message">
+             <div class="profile-photo">
+                <img src="./images/profile-14.jpg">
+             </div>
+             <div class="message-body">
+                <h5>Gautam Gambhir</h5>
+                <p class="text-muted">Yes,I am joining as new head coach</p>
+             </div>
+          </div>
+       
+
+             <div class="message">
+             <div class="profile-photo">
+                <img src="./images/profile-12.jpg">
+                <div class="active"></div>
+             </div>
+             <div class="message-body">
+                <h5>Pat Cummins</h5>
+                <p class="text-bold">4 new messages</p>
+             </div>
+          </div>
+        
+
+             <div class="message">
+             <div class="profile-photo">
+                <img src="./images/profile-10.jpg">
+             </div>
+             <div class="message-body">
+                <h5>Hardik Pandya</h5>
+                <p class="text-muted">I am feeling very very happy right now.</p>
+             </div>
+          </div>
+        
+
+             <div class="message">
+             <div class="profile-photo">
+                <img src="./images/profile-5.jpg">
+                <div class="active"></div>
+             </div>
+             <div class="message-body">
+                <h5>Rohit Sharma</h5>
+                <p class="text-muted">We did it Sir.</p>
+             </div>
+          </div>
+        
+
+             <div class="message">
+             <div class="profile-photo">
+                <img src="./images/profile-3.jpg">
+             </div>
+             <div class="message-body">
+                <h5>Saurav Ganguli</h5>
+                <p class="text-bold">2 new messages</p>
+             </div>
+          </div>
+        </div>
+        <!--_________________END OF MESSAGES__________________-->
+
+        <!--_________________FRIEND REQUESTS___________________-->
+        <div class="friend-requests">
+            <h4>Requests</h4>
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="./images/profile-6.jpg">
+                    </div>
+                    <div>
+                        <h5>Ab Devilliers</h5>
+                        <p class="text-muted">
+                            7 mutual friends
+                        </p>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">
+                        Accept
+                    </button>
+                    <button class="btn">
+                        Decline
+                    </button>
+                </div>
+            </div>
+            
+            
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="./images/profile-9.jpg">
+                    </div>
+                    <div>
+                        <h5>Stev Smith</h5>
+                        <p class="text-muted">
+                            7 mutual friends
+                        </p>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">
+                        Accept
+                    </button>
+                    <button class="btn">
+                        Decline
+                    </button>
+                </div>
+            </div>
+        
+
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="./images/profile-17.jpg">
+                    </div>
+                    <div>
+                        <h5>Brendon Mcclum</h5>
+                        <p class="text-muted">
+                            7 mutual friends
+                        </p>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">
+                        Accept
+                    </button>
+                    <button class="btn">
+                        Decline
+                    </button>
+                </div>
+            </div>
+
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="./images/profile-18.jpg">
+                    </div>
+                    <div>
+                        <h5>David Warner</h5>
+                        <p class="text-muted">
+                            7 mutual friends
+                        </p>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">
+                        Accept
+                    </button>
+                    <button class="btn">
+                        Decline
+                    </button>
+                </div>
+            </div>
+            
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="./images/profile-19.jpg">
+                    </div>
+                    <div>
+                        <h5>Kane Williamson</h5>
+                        <p class="text-muted">
+                            7 mutual friends
+                        </p>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">
+                        Accept
+                    </button>
+                    <button class="btn">
+                        Decline
+                    </button>
+                </div>
+            </div>
+
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="./images/profile-20.jpg">
+                    </div>
+                    <div>
+                        <h5>Chris Gayle</h5>
+                        <p class="text-muted">
+                            7 mutual friends
+                        </p>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">
+                        Accept
+                    </button>
+                    <button class="btn">
+                        Decline
+                    </button>
+                </div>
+            </div>
+
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="./images/profile-21.jpg">
+                    </div>
+                    <div>
+                        <h5>Lasith Malinga</h5>
+                        <p class="text-muted">
+                            7 mutual friends
+                        </p>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">
+                        Accept
+                    </button>
+                    <button class="btn">
+                        Decline
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--_________________END OF FRIEND REQUESTS__________________-->
+    </div>
+    <!--_________________END OF RIGHT SIDE__________________-->
+</div>
+</main>
+
+
+<!--************************************THEME CUSTOMIZATION*************************************-->  
+<div class="customize-theme">
+    <div class="card">
+        <h2>Customize your view</h2>
+        <p class="text-muted">Manage your font size,color, and background.</p>
+
+        <!-- ++++++++++++++++++++FONT SIZES+++++++++++++++++++++-->
+         <div class="font-size">
+            <h4>Font Size</h4>
+            <div>
+                <h6>Aa</h6>
+                <div class="choose-size">
+                    <span class="font-size-1"></span>
+                    <span class="font-size-2 active"></span>
+                    <span class="font-size-3"></span>
+                    <span class="font-size-4"></span>
+                    <span class="font-size-5"></span>
+                </div>
+                <h3>Aa</h3>
+            </div>
+         </div>
+
+         <!--++++++++++++++++++PRIMARY COLORS+++++++++++++-->
+         <div class="color">
+            <h4>Color</h4>
+            <div class="choose-color">
+                <span class="color-1 active"></span>
+                <span class="color-2"></span>
+                <span class="color-3"></span>
+                <span class="color-4"></span>
+                <span class="color-5"></span>
+            </div>
+         </div>
+
+         <!--+++++++++++++++++++BACKGROUND COLORS+++++++++++++++++++-->
+
+         <div class="background">
+            <h4>Background</h4>
+            <div class="choose-bg">
+                <div class="bg-1" active>
+                    <span></span>
+                    <h5 for="bg-1">Light</h5>
+                </div>
+                <div class="bg-2">
+                    <span></span>
+                    <h5>Dim</h5>
+                </div>
+                <div class="bg-3">
+                    <span></span>
+                    <h5 for="bg-3">Lights Out</h5>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
